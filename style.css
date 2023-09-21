@@ -1,0 +1,127 @@
+*{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-decoration: none;
+   text-decoration-style: none;
+   cursor: none;
+}
+.header{
+   display: flex;
+   align-items: flex-end;
+   height: 80vh;
+   background-image: url(asset/20653_18.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+.header .design{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
+}
+.header .project-top-text{
+   padding: 20px;
+   color: #fff;
+   z-index: 9;
+}
+.header .project-head-name{
+   font-size: 3rem;
+   padding: 10px 0;
+}
+.project-list{
+   padding: 10% 10px;
+}
+.project-list .prolist{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+}
+.project-list .prolist .proitem{
+   width: 100%;
+   padding: 10px;
+   margin: 15px 0;
+}
+.project-list .prolist .proitem .item-img{
+   width: 100%;
+   height: 200px;
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+}
+.project-list .prolist .proitem .item-img img{
+   width: 100%;
+   height: fit-content;
+}
+.project-list .prolist .proitem .item-img .projname{
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   border-radius: 10px;
+   /*  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7))*/
+   color: #fff;
+}
+.project-lang{
+   display: inline-flex;
+   align-items: center;
+   padding: 5px;
+}
+.project-lang p{
+   font-weight: bold;
+}
+.project-lang li{
+   padding: 5px;
+}
+.view-div{
+   display: flex;
+   align-items: center;
+}
+.view-div p{
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 16px;
+   border: 2px solid #6121CE;
+   background-color: transparent;
+   margin: 3px;
+   color: #6121CE;
+   transition: 0.3s ease;
+}
+.view-div p:hover{
+   background-color: rgba(97, 33, 206, 0.5);
+}
+.like-views{
+   display: flex;
+   align-items: center;
+}
+.like-views div{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 16px;
+   margin: 3px;
+   background-color: #ECECEC;
+}
+.like-views div p, i{
+   margin: 0 3px;
+}
+.like-views .prolike:hover{
+   background-color: rgba(97, 33, 206, 0.5);
+}
+.like-views .prolike:hover i{
+   color: #6121CE;
+   animation: like 0.3s linear;
+}
+@keyframes like{
+   0%{
+      transform: scale(1)
+   }
+   50%{
+      transform: scale(2)
+   }
+   100%{
+      transform: scale(1)
+   }
+}
